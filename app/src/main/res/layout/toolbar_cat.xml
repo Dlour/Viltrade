@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+
+
+
+
+
+
+    <ImageView
+        android:layout_marginTop="73dp"
+        android:id="@+id/detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:translationY="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_image">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="19dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. "
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000"
+                android:textStyle="bold"
+                android:fontFamily="@font/sora_semibold"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Produk"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sora_reguler"
+                    android:textSize="16sp"/>
+                <RatingBar
+                    android:id="@+id/detailed_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:isIndicator="true"
+                    android:numStars="1"
+                    android:stepSize="0.1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_alignParentRight="false"/>
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="59dp"
+                    android:fontFamily="@font/sora_reguler"
+                    android:text="4.0"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:fontFamily="@font/sora_reguler"
+                    android:textSize="12dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginStart="43dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/laku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:fontFamily="@font/sora_reguler"
+                    android:textSize="12dp"
+                    android:layout_marginTop="59dp"
+                    android:layout_marginStart="50dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terjual"
+                    android:fontFamily="@font/sora_reguler"
+                    android:textSize="12dp"
+                    android:layout_marginTop="59dp"
+                    android:layout_marginStart="74dp"
+                    android:textColor="@color/black"
+                    />
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9E9E9E"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Deskripsi Produk"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/detail_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Lorem ipsum dolor sit amet, citudin nunc odio, ut  varius urnci. Curabitur non varius massa, et tristique nibh. Etiam condimentum nisi eget diam egestas Nulla ex nibh,  ut magna eu, eleifend finibus quam. Sed id nisi eget tellus maximus laoreet. Nam vestibulum, lorem in euismod scelerisque, orci nisl vulputate sapien, eu ultricies dolor orci at libero. Cras consequat nulla sem, et cursus augue pulvinar ac."
+                android:fontFamily="@font/poppins_regular"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp">
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

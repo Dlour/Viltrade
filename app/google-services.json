@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "275362095278",
+    "project_id": "viltrade-2b1c2",
+    "storage_bucket": "viltrade-2b1c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275362095278:android:09a3409d0ca5737e344d3f",
+        "android_client_info": {
+          "package_name": "com.example.viltrade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275362095278-kt3566jggjeku8hbvph3g4s6mdta854o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.viltrade",
+            "certificate_hash": "66f2bef704c5df0adf9fe53137ddfe5d8f68e9ed"
+          }
+        },
+        {
+          "client_id": "275362095278-i1hrsupj5m6t5vd7o11pomcfpe95gfc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC1URZ3O3UOlXQW61-MwMegOmAv28Nvf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275362095278-i1hrsupj5m6t5vd7o11pomcfpe95gfc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275362095278:android:191af2af22e17b7e344d3f",
+        "android_client_info": {
+          "package_name": "com.example.viltrade2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275362095278-i1hrsupj5m6t5vd7o11pomcfpe95gfc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC1URZ3O3UOlXQW61-MwMegOmAv28Nvf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275362095278-i1hrsupj5m6t5vd7o11pomcfpe95gfc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275362095278:android:f253663dcb2ef045344d3f",
+        "android_client_info": {
+          "package_name": "com.example.viltraderevisi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275362095278-i1hrsupj5m6t5vd7o11pomcfpe95gfc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC1URZ3O3UOlXQW61-MwMegOmAv28Nvf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275362095278-i1hrsupj5m6t5vd7o11pomcfpe95gfc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

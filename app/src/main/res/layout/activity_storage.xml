@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StorageActivity">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/toolbarStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_marginTop="22dp"
+            android:id="@+id/textproduk"
+            android:layout_marginStart="26dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produk"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/textproduk"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="100dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_below="@id/textproduk"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+
+    
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

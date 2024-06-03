@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.CartFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"/>
+
+        <ImageView
+            android:id="@+id/pictItem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bahan_logam"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/namaItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sora_reguler"
+                android:text="Aluminium"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="17dp"/>
+
+            <TextView
+                android:id="@+id/priceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp3000"
+                android:fontFamily="@font/sora_semibold"
+                android:textSize="11sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Cart : "
+                android:fontFamily="@font/sora_reguler"
+                android:textSize="11sp"
+                android:id="@+id/datItem"
+                android:textColor="@color/black"
+                android:layout_marginTop="55dp"
+                android:layout_marginStart="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu Cart : "
+                android:id="@+id/timeItem"
+                android:fontFamily="@font/sora_reguler"
+                android:textSize="11sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="16dp"/>
+
+
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/removequantity"
+            android:src="@drawable/baseline_maximize_24"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/totQuant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:fontFamily="@font/sora_reguler"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:id="@+id/addquantity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_add_24"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

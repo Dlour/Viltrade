@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Viltrade2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="search_options">
+        <item>Bahan Logam</item>
+        <item>Bahan Pertanian</item>
+        <item>Bahan Tambang</item>
+        <item>Bahan Bangunan</item>
+    </string-array>
+</resources>

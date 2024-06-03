@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="135dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: 1234567 "
+        android:fontFamily="@font/sora_reguler"
+        android:textSize="12dp"
+        android:id="@+id/idProduk"
+        android:textColor="#A496B6"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="19dp"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/test4"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/pictItem"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emas (Kuar dan Pirit)"
+        android:fontFamily="@font/sora_reguler"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="109dp"
+        android:id="@+id/namaStorage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp35.000"
+        android:textColor="#2D0C57"
+        android:fontFamily="@font/sora_semibold"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginStart="109dp"
+        android:id="@+id/hargaStorage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stok: 10"
+        android:fontFamily="@font/sora_reguler"
+        android:textSize="11dp"
+        android:textColor="#A496B6"
+        android:id="@+id/stokStorage"
+        android:layout_marginTop="96dp"
+        android:layout_marginStart="109dp"/>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="51dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginStart="256dp">
+    
+    <Button
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btndelete"
+        android:background="@drawable/style_button"
+        android:backgroundTint="@color/dasar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:fontFamily="@font/sora_reguler"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="51dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginStart="201dp">
+
+    <Button
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnedit"
+        android:background="@drawable/style_button"
+        android:backgroundTint="@color/dasar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:fontFamily="@font/sora_reguler"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+

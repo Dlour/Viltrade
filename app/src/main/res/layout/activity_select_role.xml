@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dasar"
+    tools:context=".select_role">
+
+    <TextView
+        android:id="@+id/pilihR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Mau ngapain?"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="20dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/sora_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/role"
+        android:fontFamily="@font/sora_reguler"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Silahkan Pilih Role"
+        app:layout_constraintTop_toBottomOf="@id/pilihR"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="55sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Distributor"
+        android:id="@+id/distributor"
+        android:fontFamily="@font/sora_semibold"
+        android:textColor="@color/dasar"
+        app:layout_constraintTop_toBottomOf="@id/role"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="55sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/konsumen"
+        android:text="Konsumen"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/dasar"
+        android:fontFamily="@font/sora_semibold"
+        app:layout_constraintTop_toBottomOf="@id/role"
+        app:layout_constraintStart_toEndOf="@id/distributor"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

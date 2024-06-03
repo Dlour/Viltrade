@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:id="@+id/backtoolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="31dp"/>
+
+    <EditText
+        android:id="@+id/searchtoolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/edit_search"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/sora_semibold"
+        android:hint="Cari Produk yang kamu inginkan"
+        android:inputType="text"
+        android:padding="6dp"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toStartOf="@+id/cartToolbar"
+        app:layout_constraintStart_toEndOf="@+id/backtoolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cartToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_shopping_cart_24"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="30dp"
+         />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

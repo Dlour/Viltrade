@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBarangActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/backtambah"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Produk Baru"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20dp"
+        android:id="@+id/texttambah"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:id="@+id/line"
+        app:layout_constraintTop_toBottomOf="@id/texttambah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informasi Dasar"
+        android:fontFamily="@font/sora_semibold"
+        android:textStyle="bold"
+        android:id="@+id/textinformasi"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="22dp"/>
+
+    <RelativeLayout
+        android:background="@drawable/border_barang"
+        android:id="@+id/gambarframe"
+        app:layout_constraintTop_toBottomOf="@id/textinformasi"
+        app:layout_constraintStart_toStartOf="@id/textinformasi"
+        android:layout_width="316dp"
+        android:layout_height="163dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Gambar Produk"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12dp"
+            android:id="@+id/textgambar"
+            android:layout_marginStart="16dp"/>
+
+        <FrameLayout
+            android:layout_width="255dp"
+            android:layout_height="95dp"
+            android:background="@drawable/border_gambarbarang"
+            android:layout_below="@id/textgambar"
+            android:id="@+id/tambahGambar"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/add_image"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unggah Gambar Penjualan"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="10dp"
+                android:textColor="#757575"/>
+
+
+        </FrameLayout>
+        
+        
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="316dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tambahnama"
+        android:background="@drawable/border_barang"
+        app:layout_constraintTop_toBottomOf="@id/gambarframe"
+        app:layout_constraintStart_toStartOf="@id/gambarframe">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Nama produk"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/xy"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="22dp"/>
+        
+        <EditText
+            android:layout_width="281dp"
+            android:layout_height="23dp"
+            android:hint="Nama Produk"
+            android:background="#EBEBEB"
+            android:layout_below="@id/xy"
+            android:id="@+id/tambah_nama"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="10dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@id/tambahnama"
+        android:layout_width="316dp"
+        android:id="@+id/borderKategori"
+        android:layout_height="67dp"
+        app:layout_constraintStart_toStartOf="@id/tambahnama"
+        android:background="@drawable/border_barang"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Kategori"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:id="@+id/textkategori"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="22dp"/>
+        <EditText
+            android:layout_width="281dp"
+            android:layout_height="23dp"
+            android:background="#EBEBEB"
+            android:layout_below="@id/textkategori"
+            android:id="@+id/tambahKategori"
+            android:layout_centerHorizontal="true"
+            android:hint="Masukkan Kategori"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="10dp"
+            android:paddingLeft="5dp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="316dp"
+        android:layout_height="102dp"
+        android:id="@+id/borderDeskripsi"
+        android:background="@drawable/border_barang"
+        app:layout_constraintTop_toBottomOf="@id/borderKategori"
+        app:layout_constraintStart_toStartOf="@id/borderKategori"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Deskripsi Produk"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:id="@+id/textDeskripsi"
+            android:layout_marginStart="22dp"/>
+
+        <EditText
+            android:layout_width="281dp"
+            android:layout_height="54dp"
+            android:background="#EBEBEB"
+            android:hint="Sebaiknya  gunakan lebih dari 500 karakter.  Jelaskan produk anda disini"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:id="@+id/tambahDeskripsi"
+            android:layout_below="@id/textDeskripsi"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="316dp"
+        android:layout_height="59dp"
+        android:background="@drawable/border_barang"
+        app:layout_constraintTop_toBottomOf="@id/borderDeskripsi"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/borderDeskripsi"
+        android:id="@+id/borderHarga">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Harga"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/textHarga"
+            android:textSize="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="22dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga satuan/kg(Rp)"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/hargasatuan"
+            android:layout_below="@id/textHarga"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="22dp"/>
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="23dp"
+                android:background="#EBEBEB"
+                android:layout_below="@id/textHarga"
+                android:layout_toEndOf="@id/hargasatuan"
+                android:hint="Masukkan Harga"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:id="@+id/tambahHarga"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="316dp"
+        android:layout_height="32dp"
+        app:layout_constraintTop_toBottomOf="@id/borderHarga"
+        app:layout_constraintStart_toStartOf="@id/borderHarga"
+        android:background="@drawable/border_barang"
+        android:layout_marginTop="5dp"
+        android:id="@+id/borderStok">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Stok"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="22dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/textStok"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="23dp"
+            android:layout_toEndOf="@id/textStok"
+            android:background="#EBEBEB"
+            android:hint="Masukkan Stok"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="10dp"
+            android:id="@+id/tambahStok"
+            android:textAlignment="center"
+            android:layout_marginStart="109dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:id="@+id/tambahButton"
+        android:backgroundTint="@color/dasar"
+        android:text="Tambahkan"
+        app:layout_constraintTop_toBottomOf="@id/borderStok"
+        app:layout_constraintStart_toStartOf="@id/borderStok"
+        app:layout_constraintEnd_toEndOf="@id/borderStok"
+        android:layout_marginTop="73dp"
+        android:fontFamily="@font/sora_semibold"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:textAlignment="center"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

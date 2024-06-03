@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CartFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarCart"
+        android:layout_height="match_parent">
+            <ImageView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="17dp"
+                android:id="@+id/backCart"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:id="@+id/keranjang"
+            android:textColor="@color/black"
+            android:text="Keranjang Belanja"
+            app:layout_constraintStart_toEndOf="@id/backCart"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="29dp"
+            android:layout_marginStart="79dp"/>
+
+
+
+
+        
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#DBEDF8"
+        android:id="@+id/pengiriman"
+        android:layout_marginTop="70dp"
+        android:layout_height="92dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="18dp"
+            android:text="Opsi Pengiriman"
+            android:fontFamily="@font/sora_reguler"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Cargo Reguler - 3 - 7 Hari"
+            android:textColor="@color/black"
+            android:layout_marginTop="42dp"
+            android:layout_marginStart="17dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_reguler"
+            android:textSize="10dp"
+            android:id="@+id/datItem"
+            android:text="Garansi : 18-20 Mei"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:text="Rp75.000"
+            android:textColor="@color/black"
+            android:layout_marginStart="254dp"
+            android:layout_marginTop="40dp"/>
+
+        <ImageView
+            android:id="@+id/enterCargo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="340dp"/>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectall"
+        android:layout_below="@id/pengiriman"
+        android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/pilihSemua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Semua"
+        android:fontFamily="@font/sora_reguler"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Bersihkan"
+            android:id="@+id/clearBtn"
+            android:backgroundTint="@color/dasar"
+            android:fontFamily="@font/sora_semibold"
+            android:textSize="12dp"
+            android:layout_marginStart="120dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rec_cart"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/selectall"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="640dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:text="Total Pembayaran"
+            android:id="@+id/totpembayaran"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCart"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textColor="#1984C4"
+            android:text="Rp 78.000"
+            android:id="@+id/totharga"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totpembayaran"
+            app:layout_constraintEnd_toStartOf="@id/btnCart"
+            android:layout_marginEnd="15dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dasar"
+            android:text="Buat Pesanan"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:id="@+id/btnCart"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.CheckOutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarCO">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="26dp"
+            android:id="@+id/backCO"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_toEndOf="@id/backCO"
+            android:layout_marginTop="29dp"
+            android:layout_marginStart="111dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/stroke_co"
+        android:layout_width="match_parent"
+        android:layout_marginTop="73dp"
+        android:layout_height="92dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Pengiriman"
+            android:fontFamily="@font/sora_reguler"
+            android:id="@+id/text_alamat"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/namaUser"
+            android:text="Nama User"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:layout_below="@id/text_alamat"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat pengguna bla bla bla"
+            android:id="@+id/alamatUser"
+            android:fontFamily="@font/sora_reguler"
+            android:textColor="#6D767C"
+            android:layout_below="@id/namaUser"
+            android:layout_marginStart="18dp"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti Alamat"
+            android:fontFamily="@font/sora_reguler"
+            android:textSize="11dp"
+            android:textColor="#1984C4"
+            android:layout_toEndOf="@id/alamatUser"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="122dp"
+            android:id="@+id/gantiAlamat"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/forward_arrow_blue"
+            android:layout_toEndOf="@id/gantiAlamat"
+            android:layout_marginTop="8dp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rincian Pesanan"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sora_semibold"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginStart="21dp"/>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="216dp"
+        android:background="#F1F7FB">
+
+        <TextView
+            android:id="@+id/jmlbrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:text="1"
+            android:textColor="#1984C4"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:layout_marginStart="250dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barang"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textSize="8dp"
+            android:textColor="#1984C4"
+            android:layout_toEndOf="@id/jmlbrg"
+            android:layout_marginStart="2dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_co"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metode Pembayaran"
+        android:fontFamily="@font/sora_semibold"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:layout_marginTop="389dp"
+        android:layout_marginStart="22dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="416dp"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="62dp"
+            android:layout_marginStart="21dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="192dp"
+                android:layout_height="62dp"
+                android:id="@+id/payment_bca"
+                android:background="@drawable/border_payment"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_bca"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sora_reguler"
+                android:text="Transfer ke rekening bank BCA"
+                android:textColor="#7F7F7F"
+                android:textSize="8dp" />
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="192dp"
+                android:layout_height="62dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_payment"
+                android:layout_marginStart="6dp"
+                android:id="@+id/dana_payment">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dana_logo"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginStart="18dp"/>
+
+                    <FrameLayout
+                        android:layout_width="51dp"
+                        android:background="@drawable/border_dana"
+                        android:layout_marginStart="61dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_height="19dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gunakan"
+                            android:fontFamily="@font/sora_semibold"
+                            android:textStyle="bold"
+                            android:textSize="8dp"
+                            android:layout_gravity="center"
+                            android:textColor="#1984C4"
+                            />
+
+                    </FrameLayout>
+                    
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="489dp"
+        android:layout_height="52dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringkasan Pembayaran"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:id="@+id/textpembayaran"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal (1 produk)"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/subtotal"
+            android:layout_below="@id/textpembayaran"
+            android:layout_marginStart="21dp"
+            android:textSize="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp3.000"
+            android:layout_toEndOf="@id/subtotal"
+            android:layout_below="@id/textpembayaran"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:layout_marginStart="168dp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="542dp"
+        android:layout_height="77dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Pemesanan"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:id="@+id/textPemesanan"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Pengiriman"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/black"
+            android:id="@+id/textpengiriman"
+            android:layout_below="@id/textPemesanan"
+            android:layout_marginStart="21dp"
+            android:textSize="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp3.000"
+            android:layout_toEndOf="@id/textPemesanan"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:id="@+id/harga_pemesanan"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:layout_marginStart="168dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp3.000"
+            android:layout_toEndOf="@id/textpengiriman"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/harga_pemesanan"
+            android:id="@+id/biayapengiriman"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:layout_marginStart="168dp"/>
+
+
+    </RelativeLayout>
+
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="620dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Pembayaran"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/textTot"
+            android:layout_marginStart="22dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp78.000"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/totalhargaCO"
+            android:textSize="15dp"
+            android:layout_toEndOf="@id/textTot"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="97dp"/>
+
+    </RelativeLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="690dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:text="Total Pembayaran"
+            android:id="@+id/totpembayaran"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCart"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:textColor="#1984C4"
+            android:text="Rp 78.000"
+            android:id="@+id/totharga"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totpembayaran"
+            app:layout_constraintEnd_toStartOf="@id/btnCart"
+            android:layout_marginEnd="15dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dasar"
+            android:text="Buat Pesanan"
+            android:fontFamily="@font/sora_semibold"
+            android:textStyle="bold"
+            android:id="@+id/btnCart"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    
+
+
+
+
+</FrameLayout>

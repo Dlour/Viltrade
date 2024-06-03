@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".fragment.ProfileFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:backgroundTint="@color/dasar"
+        android:src="@drawable/user"
+        android:id="@+id/foto_profile"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="40dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Nama Lengkap"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text"
+        android:elevation="5dp"
+        android:id="@+id/username"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dasar"
+            android:text="Update Profile"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:id="@+id/updateProfile"/>
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/dasar"
+            android:layout_gravity="center"
+            android:id="@+id/progress"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/logoutbtn"
+        />
+
+
+
+</LinearLayout>

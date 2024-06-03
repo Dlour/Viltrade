@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar_item"
+        />
+
+    <ScrollView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchtoolbar"
+        android:layout_width="match_parent"
+        android:id="@+id/sc"
+        android:layout_height="wrap_content">
+            <include layout="@layout/toolbar_cat"/>
+    </ScrollView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/bottombutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sc"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <Button
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tambahbtn"
+            android:layout_width="131dp"
+            android:layout_height="40dp"
+
+            android:backgroundTint="#34A1E2"
+
+            android:layout_marginStart="243dp"/>
+
+
+
+
+        <Button
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/chatbtn"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="80dp"
+            android:backgroundTint="#34A1E2"
+            android:textAlignment="center"
+
+            />
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="@id/chatbtn"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/chat_adapter"
+            android:background="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"/>
+
+        <Button
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:backgroundTint="#34A1E2"
+            android:drawableLeft="@drawable/baseline_share_24"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:layout_marginStart="18dp"/>
+
+            <TextView
+               app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tambahbtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah"
+                android:textSize="16dp"
+                android:fontFamily="@font/sora_semibold"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sora_semibold"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/chatbtn"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
